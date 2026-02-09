@@ -80,20 +80,26 @@ const DealLetter = React.forwardRef(({ data }, ref) => {
           <strong>પેમેન્ટ કંડીશન:</strong> {data.eleven || "—"}
         </div>
 
-        <div className="deal-letter__field deal-letter__field--full">
-          <strong>1 - પેમેન્ટ અને તારીખ:</strong> {data.sixteen || "—"}
-        </div>
-        <div className="deal-letter__field deal-letter__field--full">
-          <strong>2 - પેમેન્ટ અને તારીખ:</strong> {data.seventeen || "—"}
-        </div>
-        <div className="deal-letter__field deal-letter__field--full">
-          <strong>3 - પેમેન્ટ અને તારીખ:</strong> {data.eighteen || "—"}
-        </div>
-        <div className="deal-letter__field deal-letter__field--full">
-          <strong>4 - પેમેન્ટ અને તારીખ:</strong> {data.nineteen || "—"}
-        </div>
-        <div className="deal-letter__field deal-letter__field--full">
-          <strong>5 - પેમેન્ટ અને તારીખ:</strong> {data.twenty || "—"}
+        <div className="deal-letter__two-column">
+          <div className="deal-letter__left-column">
+            <div className="deal-letter__field">
+              <strong>1 - પેમેન્ટ અને તારીખ:</strong> {data.sixteen || "—"}
+            </div>
+            <div className="deal-letter__field">
+              <strong>2 - પેમેન્ટ અને તારીખ:</strong> {data.seventeen || "—"}
+            </div>
+            <div className="deal-letter__field">
+              <strong>3 - પેમેન્ટ અને તારીખ:</strong> {data.eighteen || "—"}
+            </div>
+          </div>
+          <div className="deal-letter__right-column">
+            <div className="deal-letter__field">
+              <strong>4 - પેમેન્ટ અને તારીખ:</strong> {data.nineteen || "—"}
+            </div>
+            <div className="deal-letter__field">
+              <strong>5 - પેમેન્ટ અને તારીખ:</strong> {data.twenty || "—"}
+            </div>
+          </div>
         </div>
 
         <div className="deal-letter__field deal-letter__field--full deal-letter__field--rules">
