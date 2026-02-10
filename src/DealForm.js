@@ -71,7 +71,7 @@ function DealForm({ onSubmit }) {
     onSubmit({ ...formData, rules: rulesToSubmit });
   };
 
-  const bannerSrc = `${process.env.PUBLIC_URL || ""}/banner.png`;
+  const bannerSrc = `${process.env.PUBLIC_URL || ""}/logo.png`;
 
   return (
     <form className="deal-form" onSubmit={handleSubmit}>
@@ -215,56 +215,50 @@ function DealForm({ onSubmit }) {
             onChange={handleChange}
           />
         </div>
-        <div className="deal-form__two-column">
-          <div className="deal-form__left-column">
-            <div className="deal-form__field">
-              <label> 1 - પેમેન્ટ અને તારીખ :</label>
-              <input
-                type="text"
-                name="sixteen"
-                value={formData.sixteen}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="deal-form__field">
-              <label> 2 - પેમેન્ટ અને તારીખ :</label>
-              <input
-                type="text"
-                name="seventeen"
-                value={formData.seventeen}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="deal-form__field">
-              <label> 3 - પેમેન્ટ અને તારીખ :</label>
-              <input
-                type="text"
-                name="eighteen"
-                value={formData.eighteen}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className="deal-form__right-column">
-            <div className="deal-form__field">
-              <label> 4 - પેમેન્ટ અને તારીખ :</label>
-              <input
-                type="text"
-                name="nineteen"
-                value={formData.nineteen}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="deal-form__field">
-              <label> 5 - પેમેન્ટ અને તારીખ :</label>
-              <input
-                type="text"
-                name="twenty"
-                value={formData.twenty}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
+        <div className="deal-form__field deal-form__field--full">
+          <label> 1 - પેમેન્ટ અને તારીખ :</label>
+          <input
+            type="text"
+            name="sixteen"
+            value={formData.sixteen}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="deal-form__field deal-form__field--full">
+          <label> 2 - પેમેન્ટ અને તારીખ :</label>
+          <input
+            type="text"
+            name="seventeen"
+            value={formData.seventeen}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="deal-form__field deal-form__field--full">
+          <label> 3 - પેમેન્ટ અને તારીખ :</label>
+          <input
+            type="text"
+            name="eighteen"
+            value={formData.eighteen}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="deal-form__field deal-form__field--full">
+          <label> 4 - પેમેન્ટ અને તારીખ :</label>
+          <input
+            type="text"
+            name="nineteen"
+            value={formData.nineteen}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="deal-form__field deal-form__field--full">
+          <label> 5 - પેમેન્ટ અને તારીખ :</label>
+          <input
+            type="text"
+            name="twenty"
+            value={formData.twenty}
+            onChange={handleChange}
+          />
         </div>
         <div className="deal-form__field deal-form__field--full deal-form__field--rules">
           <label className="deal-form__rules-label">નિયમો :</label>
