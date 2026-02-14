@@ -171,15 +171,15 @@ function DealForm({ onSubmit }) {
         <div className="deal-form__field deal-form__field--full">
           <label>મિલકતનો પ્રકાર:</label>
           <select name="two" value={formData.two} onChange={handleChange}>
-            <option value="">select any one</option>
-            <option value="rehnank plot">રહેણાંક પ્લોટ</option>
-            <option value="commercial plot">કોમર્શિયલ પ્લોટ</option>
-            <option value="industrial plot">ઇંડસ્ટ્રિયલ પ્લોટ</option>
-            <option value="flat/appartment">ફ્લેટ / એપાર્ટમેન્ટ</option>
-            <option value="bunglow/makan">બંગલો / મકાન</option>
-            <option value="commercial dukan">કોમર્શિયલ દુકાન</option>
-            <option value="office">ઓફિસ</option>
-            <option value="kheti ni zameen">ખેતીની જમીન</option>
+            <option value="">એક પસંદ કરો</option>
+            <option value="રહેણાંક પ્લોટ">રહેણાંક પ્લોટ</option>
+            <option value="કોમર્શિયલ પ્લોટ">કોમર્શિયલ પ્લોટ</option>
+            <option value="ઇંડસ્ટ્રિયલ પ્લોટ">ઇંડસ્ટ્રિયલ પ્લોટ</option>
+            <option value="ફ્લેટ / એપાર્ટમેન્ટ">ફ્લેટ / એપાર્ટમેન્ટ</option>
+            <option value="બંગલો / મકાન">બંગલો / મકાન</option>
+            <option value="કોમર્શિયલ દુકાન">કોમર્શિયલ દુકાન</option>
+            <option value="ઓફિસ">ઓફિસ</option>
+            <option value="ખેતીની જમીન">ખેતીની જમીન</option>
           </select>
         </div>
         <div className="deal-form__two-column">
